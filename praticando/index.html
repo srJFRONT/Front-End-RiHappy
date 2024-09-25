@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitã Lima</title>
+</head>
+<body>
+    <h1>Para alegrar o seu dia Capitã!</h1><br>
+    <form method="get">
+        <label for="opcoes">Escolha o dia da Semana</label><br>
+       <select id="opcoes" onchange="mostrarAlert()">
+         <option value="">Dia da semana</option>
+         <option value="segunda">Segunda</option>
+         <option value="Terça">Terça</option>
+         <option value="quarta">Quarta</option>
+         <option value="quinta">Quinta</option>
+         <option value="sexta">Sexta</option>
+         <option value="sabado">Sábado</option>
+         <option value="domingo">Domingo</option>
+       </select><br>
+
+      <input type="submit" value="Enviar">
+
+    </form>
+    <script>
+        function mostrarAlerta() {
+            const valorSelecionado = document.getElementById("opcoes").value;
+            
+            switch (valorSelecionado) {
+                case "segunda":
+                    alert("Você selecionou a Opção 1");
+                    break;
+                case "terça":
+                    alert("Você selecionou a Opção 2");
+                    break;
+                case "quarta":
+                    alert("Você selecionou a Opção 3");
+                    break;
+                case "quinta":
+                    alert("Você selecionou a Opção 3");
+                    break;
+                case "sexta":
+                    alert("Você selecionou a Opção 3");
+                    break;
+                case "sabado":
+                    alert("Você selecionou a Opção 3");
+                    break;
+                case "Domingo":
+                    alert("Você selecionou a Opção 3");
+                    break;
+                default:
+                    alert("Por favor, selecione uma opção válida");
+            }
+        }
+    </script>
+</body>
+</html>
